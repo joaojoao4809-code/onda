@@ -20,7 +20,7 @@
   <main class="shell" id="home">
     <header class="topbar">
       <div class="brand"><span class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1"><path d="M3 9c4-5 7-5 11 0s7 5 7 0M3 15c4-5 7-5 11 0s7 5 7 0"/></svg></span>onda</div>
-      <div class="top-note"><i class="dot"></i> Prévia privada · sem serviços externos</div>
+      <div class="top-note"><i class="dot"></i> Salas ao vivo · conexão WebRTC</div>
     </header>
     <section class="hero">
       <div class="eyebrow" id="heroEyebrow">conversa com presença</div>
@@ -40,7 +40,7 @@
           </div>
           <button class="btn primary" id="joinBtn" style="width:100%;margin-top:12px">Entrar na sala</button>
         </div>
-        <div class="privacy-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/></svg><span>Esta prévia não envia dados para serviços externos. Microfone e tela só são solicitados quando você ativa os controles. O link abre a sala escolhida; áudio e vídeo entre pessoas ainda precisam de servidor.</span></div>
+        <div class="privacy-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/></svg><span>A sala usa sinalização do PeerJS e conexão direta WebRTC entre navegadores. Nomes são compartilhados somente com participantes conectados. Microfone e tela só são pedidos quando você ativa os controles.</span></div>
       </div>
       <div class="benefits"><span class="benefit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M8 21h8m-4-2v2"/></svg>Tela e voz no mesmo lugar</span><span class="benefit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11z"/><path d="m9 12 2 2 4-4"/></svg>Convite com chave forte</span><span class="benefit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M3 12h18"/><path d="m5 5 14 14"/></svg>Sem rastreadores externos</span></div>
     </section>
@@ -56,45 +56,152 @@
           <div class="reference-copy"><div class="reference-meta"><strong>Zoom</strong><span class="reference-tag">Apresentações</span></div><p>Compartilha a tela, uma janela, quadro branco ou mídia. A pessoa anfitriã pode controlar quem tem permissão para apresentar.</p><a class="reference-link" href="https://zoom.us/" target="_blank" rel="noopener noreferrer">Conhecer o Zoom <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
         </article>
         <article class="reference-card">
-          <div class="reference-art"><svg viewBox="0 0 440 260" role="img" aria-label="Ilustração de uma comunidade de voz com transmissão de uma janela"><rect width="440" height="260" rx="16" fill="#eee8fa"/><rect x="29" y="19" width="382" height="226" rx="14" fill="#262335"/><rect x="29" y="19" width="51" height="226" rx="14" fill="#353147"/><circle cx="55" cy="49" r="16" fill="#a89ce2"/><circle cx="55" cy="91" r="16" fill="#5f8d83"/><circle cx="55" cy="133" r="16" fill="#d28d75"/><circle cx="55" cy="175" r="16" fill="#9275b8"/><circle cx="55" cy="217" r="16" fill="#526e80"/><rect x="80" y="19" width="108" height="226" fill="#302d40"/><rect x="96" y="42" width="71" height="8" rx="4" fill="#8b849c"/><rect x="96" y="68" width="56" height="6" rx="3" fill="#655f75"/><rect x="96" y="86" width="72" height="6" rx="3" fill="#655f75"/><rect x="96" y="120" width="67" height="6" rx="3" fill="#8e83bf"/><rect x="96" y="138" width="51" height="6" rx="3" fill="#655f75"/><rect x="96" y="156" width="74" height="6" rx="3" fill="#655f75"/><rect x="204" y="42" width="185" height="140" rx="8" fill="#51446e"/><path d="m204 149 52-48 35 29 35-49 63 59v42H204z" fill="#75649a"/><circle cx="339" cy="77" r="14" fill="#efcb91"/><rect x="219" y="194" width="151" height="28" rx="14" fill="#39364a"/><circle cx="238" cy="208" r="9" fill="#bd8e7c"/><circle cx="262" cy="208" r="9" fill="#83a69a"/><circle cx="286" cy="208" r="9" fill="#b6a0dc"/><rect x="306" y="203" width="44" height="9" rx="4.5" fill="#d4cdea"/></svg></div>
-          <div class="reference-copy"><div class="reference-meta"><strong>Discord</strong><span class="reference-tag">Voz e comunidades</span></div><p>Transmite uma janela ou a tela inteira em chamadas diretas e canais de voz, com controles de permissão por canal.</p><a class="reference-link" href="https://discord.com/" target="_blank" rel="noopener noreferrer">Conhecer o Discord <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
+          <div class="reference-art"><svg viewBox="0 0 440 260" role="img" aria-label="Ilustração de uma comunidade de voz com transmissão de uma janela"><rect width="440" height="260" rx="16" fill="#eee8fa"/><rect x="29" y="19" width="382" height="226" rx="14" fill="#262335"/><rect x="29" y="19" width="51" height="226" rx="14" fill="#353147"/><circle cx="55" cy="49" r="16" fill="#a89ce2"/><circle cx="55" cy="91" r="16" fill="#5f8d83"/><circle cx="55" cy="133" r="16" fill="#d28d75"/><circle cx="55" cy="175" r="16" fill="#9275b8"/><circle cx="55" cy="217" r="16" fill="#526e80"/><rect x="80" y="19" width="108" height="226" fill="#302d40"/><rect x="96" y="42" width="71" height="8" rx="4" fill="#8b849c"/><rect x="96" y="68" width="56" height="6" rx="3" fill="#655f75"/><rect x="96" y="86" width="72" height="6" rx="3" fill="#655f75"/><rect x="96" y="120" width="67" height="6" rx="3" fill="#8e83bf"/><rect x="96" y="138" width="51" height="6" rx="3" fill="#655f75"/><rect x="96" y="156" width="74" height="6" rx="3" fill="#655f75"/><rect x="204" y="42" width="185" height="140" rx="8" fill="#51446e"/><path d="m204 149 62-50 42 35 28-25 53 41v32H204z" fill="#8474b5"/><rect x="229" y="190" width="133" height="28" rx="14" fill="#39354d"/><circle cx="247" cy="204" r="8" fill="#d6ad96"/><circle cx="270" cy="204" r="8" fill="#7ba598"/><circle cx="293" cy="204" r="8" fill="#d5c27c"/><rect x="314" y="200" width="28" height="8" rx="4" fill="#d8d3e5"/></svg></div>
+          <div class="reference-copy"><div class="reference-meta"><strong>Discord</strong><span class="reference-tag">Comunidades</span></div><p>Salas de voz e vídeo com transmissão de tela. A permissão para compartilhar depende das regras do servidor.</p><a class="reference-link" href="https://discord.com/" target="_blank" rel="noopener noreferrer">Conhecer o Discord <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
         </article>
       </div>
-      <p class="references-note">Ilustrações conceituais da Onda; não são capturas de tela oficiais.</p>
+      <p class="references-note">A Onda é independente desses serviços. As marcas pertencem às suas respectivas empresas.</p>
     </section>
-    <footer class="footer"><span>© 2026 onda · feito para conversas que aproximam</span><nav class="foot-links"><a href="#privacidade" id="privacyLink">Privacidade</a><a href="#sobre" id="aboutLink">Sobre</a></nav></footer>
+    <footer class="footer"><span>onda · feito para conversas pequenas</span><div class="foot-links"><a id="privacyLink" href="#privacidade">Privacidade</a><a id="aboutLink" href="#sobre">Sobre a Onda</a></div></footer>
   </main>
-  <main class="meeting" id="meeting">
-    <header class="meet-top"><div class="room-brand"><div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1"><path d="M3 9c4-5 7-5 11 0s7 5 7 0M3 15c4-5 7-5 11 0s7 5 7 0"/></svg></div><div><div class="room-title" id="roomTitle">Sala privada</div><div class="room-sub">Criada por <span id="creatorName"></span></div></div></div><div class="room-pill"><i class="dot"></i><span id="roomCodeLabel"></span> · <span id="participantCount">1 pessoa</span></div><button class="invite-btn" id="copyInvite"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg>Copiar convite</button></header>
-    <div class="meet-content"><section class="stage"><div class="screen-frame"><video id="screenVideo" autoplay playsinline muted></video><div class="screen-placeholder" id="screenPlaceholder"><div class="share-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4m-5-9 3-3 2 2 3-4"/></svg></div><h2>O palco é seu</h2><p>Inicie o compartilhamento para mostrar uma janela ou a tela inteira à sua sala.</p></div><div class="screen-live-tag" id="liveTag"><i></i> Sua tela está sendo compartilhada</div><div class="local-chip" id="localChip"><span class="mini-avatar" id="avatarInitials"></span><span id="chipName"></span> · você</div></div><div class="controlbar"><button class="control on" id="micBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0m-7 7v5m-4 0h8"/></svg><span>Microfone</span></button><button class="control" id="screenBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 22h8m-4-4v4m-3-10 3-3 3 3"/></svg><span>Compartilhar</span></button><button class="control" id="copyBtnBottom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg><span>Convite</span></button><button class="control end" id="leaveBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 17l5-5-5-5M15 12H3"/><path d="M21 4v16"/></svg><span>Sair da sala</span></button></div></section>
-      <aside class="side"><div class="side-head"><strong>Na sala</strong><span class="count" id="sideCount">1 pessoa</span></div><div class="people" id="peopleList"></div><div class="side-bottom"><b>Privacidade da sala</b><br>Convite e senha são necessários para entrar. O código não aparece em uma lista pública.</div></aside>
+  <main class="meeting" id="meeting" aria-label="Sala ao vivo">
+    <header class="meet-top"><div class="room-brand"><span class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9c4-5 7-5 11 0s7 5 7 0M3 15c4-5 7-5 11 0s7 5 7 0"/></svg></span><div><div class="room-title" id="roomTitle"></div><div class="room-sub">Criada por <span id="creatorName"></span></div></div></div><div class="room-pill"><i class="dot"></i><span id="roomCodeLabel"></span> · <span id="participantCount">Conectando…</span></div><button class="invite-btn" id="copyInvite"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg>Copiar convite</button></header>
+    <div class="meet-content"><section class="stage"><div class="screen-frame"><video id="screenVideo" autoplay playsinline muted></video><audio id="remoteAudio" autoplay></audio><div class="screen-placeholder" id="screenPlaceholder"><div class="share-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4m-5-9 3-3 2 2 3-4"/></svg></div><h2>Esperando alguém compartilhar</h2><p>A tela de quem estiver apresentando aparece aqui para todos na sala.</p></div><div class="screen-live-tag" id="liveTag"><i></i> Sua tela está sendo compartilhada</div><div class="local-chip" id="localChip"><span class="mini-avatar" id="avatarInitials"></span><span id="chipName"></span> · você</div></div><div class="controlbar"><button class="control on" id="micBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0m-7 7v5m-4 0h8"/></svg><span>Microfone</span></button><button class="control" id="screenBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 22h8m-4-4v4m-3-10 3-3 3 3"/></svg><span>Compartilhar</span></button><button class="control" id="copyBtnBottom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg><span>Convite</span></button><button class="control end" id="leaveBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 17l5-5-5-5M15 12H3"/><path d="M21 4v16"/></svg><span>Sair da sala</span></button></div></section>
+      <aside class="side"><div class="side-head"><strong>Pessoas conectadas</strong><span class="count" id="sideCount">Conectando…</span></div><div class="people" id="peopleList"></div><div class="side-bottom"><b>Conexão ao vivo</b><br>Presença por sinalização PeerJS; tela e voz seguem diretamente via WebRTC. Salas pequenas, até 8 pessoas.</div></aside>
     </div>
   </main>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="https://unpkg.com/peerjs@1.5.5/dist/peerjs.min.js"></script>
   <script>
     const $ = s => document.querySelector(s);
     const home=$('#home'), meeting=$('#meeting'), nameInput=$('#displayName');
     let room=null, pendingInvite=null, micOn=false, screenStream=null, micStream=null, toastTimer;
+    let peer=null, hostLink=null, isHost=false, joined=false, ending=false, heartbeatTimer=null;
+    const MAX_PEOPLE=8, roster=new Map(), hostLinks=new Map(), mediaCalls=new Map(), incomingCalls=new Map();
     const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-    function notify(text){const t=$('#toast');t.textContent=text;t.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove('show'),2600)}
+    function notify(text){const t=$('#toast');t.textContent=text;t.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove('show'),3200)}
     function secureRandomString(length,alphabet){const limit=256-(256%alphabet.length),out=[];while(out.length<length){const bytes=crypto.getRandomValues(new Uint8Array(Math.max(16,length-out.length)));for(const byte of bytes){if(byte<limit)out.push(alphabet[byte%alphabet.length]);if(out.length===length)break}}return out.join('')}
     function makeCode(){return secureRandomString(8,'ABCDEFGHJKLMNPQRSTUVWXYZ23456789')}
     function makePass(){return secureRandomString(24,'abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789')}
-    function initials(s){return s.trim().split(/\s+/).slice(0,2).map(x=>x[0]).join('').toUpperCase()||'V'}
-    function showRoom(person,code,pass,hostName=person){room={person,code,pass,hostName};$('#roomTitle').textContent='Sala de '+hostName;$('#creatorName').textContent=hostName;$('#roomCodeLabel').textContent=code;$('#avatarInitials').textContent=initials(person);$('#chipName').textContent=person;$('#peopleList').innerHTML=`<div class="person"><div class="avatar">${esc(initials(person))}</div><div class="person-meta"><div class="person-name">${esc(person)} (você)</div><div class="person-state">${person===hostName?'Anfitrião':'Convidado'} · acabou de entrar</div></div><span class="mic-state" id="personMic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 2l20 20M9 9v3a3 3 0 0 0 5.1 2.1M15 9V5a3 3 0 0 0-5.8-1.3M5 10a7 7 0 0 0 12 5m2-5a7 7 0 0 1-.4 2.4M12 17v5m-4 0h8"/></svg></span></div>`;home.classList.add('hidden');meeting.classList.add('active');}
-    $('#createBtn').addEventListener('click',()=>{const person=nameInput.value.trim();if(!person){nameInput.focus();notify('Digite seu nome para continuar.');return}showRoom(person,makeCode(),makePass());notify('Sala privada criada. Copie o convite para chamar alguém.')});
+    function initials(s){return s.trim().split(/s+/).slice(0,2).map(x=>x[0]).join('').toUpperCase()||'V'}
+    function renderRoster(){
+      const people=[...roster.values()].filter(p=>p.online!==false), count=people.length, label=count+' '+(count===1?'pessoa':'pessoas');
+      $('#participantCount').textContent=label;$('#sideCount').textContent=label;
+      $('#peopleList').innerHTML=people.map(p=>'<div class="person"><div class="avatar '+(p.host?'alt':'')+'">'+esc(initials(p.name))+'</div><div class="person-meta"><div class="person-name">'+esc(p.name)+(p.peerId===room?.peerId?' (você)':'')+'</div><div class="person-state">'+(p.host?'Anfitrião':'Conectado agora')+(p.screen?' · compartilhando tela':'')+(p.mic?' · microfone ligado':'')+'</div></div><span class="mic-state" aria-label="'+(p.mic?'Microfone ligado':'Microfone desligado')+'">'+(p.mic?'●':'○')+'</span></div>').join('');
+      const sharer=people.find(p=>p.screen);
+      if(sharer&&sharer.peerId!==room?.peerId)$('#liveTag').textContent='● Tela de '+sharer.name;
+      else if(sharer)$('#liveTag').textContent='● Sua tela está sendo compartilhada';
+      $('#screenBtn').disabled=!!sharer&&sharer.peerId!==room?.peerId;
+    }
+    function showRoom(person,code,pass,hostName=person){room={person,code,pass,hostName,peerId:null,hostPeerId:null};$('#roomTitle').textContent='Sala de '+hostName;$('#creatorName').textContent=hostName;$('#roomCodeLabel').textContent=code;$('#avatarInitials').textContent=initials(person);$('#chipName').textContent=person;$('#peopleList').innerHTML='';$('#participantCount').textContent='Conectando…';$('#sideCount').textContent='Conectando…';home.classList.add('hidden');meeting.classList.add('active')}
+    async function makeHostPeerId(code,pass){const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode('onda-room:'+code+':'+pass));return Array.from(new Uint8Array(digest)).slice(0,20).map(b=>b.toString(16).padStart(2,'0')).join('')}
+    function localMember(){return {peerId:room.peerId,name:room.person,host:isHost,mic:micOn,screen:!!screenStream,online:true}}
+    function setLocalPerson(){if(room?.peerId){roster.set(room.peerId,localMember());renderRoster()}}
+    function sendToHost(message){if(isHost){applyHostMessage(room.peerId,message);return}if(hostLink?.open)hostLink.send(message)}
+    function sendRoster(){const people=Array.from(roster.values()).filter(p=>p.online!==false).map(({peerId,name,host,mic,screen})=>({peerId,name,host,mic,screen}));hostLinks.forEach(link=>{if(link.open)link.send({type:'roster',people})})}
+    function syncMediaCalls(){
+      if(!peer||!room)return;const stream=localMedia(), ids=new Set([...roster.keys()].filter(id=>id!==room.peerId));
+      for(const [id,call] of mediaCalls)if(!ids.has(id)){call.close();mediaCalls.delete(id)}
+      if(!stream)return;
+      for(const id of ids){if(mediaCalls.has(id))continue;const call=peer.call(id,stream,{metadata:{name:room.person}});if(!call)continue;mediaCalls.set(id,call);call.on('close',()=>{if(mediaCalls.get(id)===call)mediaCalls.delete(id)});call.on('error',()=>{if(mediaCalls.get(id)===call)mediaCalls.delete(id)})}
+    }
+    function refreshMediaCalls(){for(const call of mediaCalls.values())call.close();mediaCalls.clear();syncMediaCalls()}
+    function publishRoster(){sendRoster();renderRoster();syncMediaCalls()}
+    function applyHostMessage(peerId,message){
+      if(!isHost||!message||ending)return;
+      if(message.type==='join'){
+        const link=hostLinks.get(peerId);if(!link)return;
+        if(!roster.has(peerId)&&roster.size>=MAX_PEOPLE){link.send({type:'full'});link.close();hostLinks.delete(peerId);return}
+        roster.set(peerId,{peerId,name:String(message.name||'Convidado').trim().slice(0,40)||'Convidado',host:false,mic:false,screen:false,online:true,lastSeen:Date.now()});
+        link.send({type:'welcome',hostName:room.hostName});publishRoster();notify(roster.get(peerId).name+' entrou na sala.');return;
+      }
+      if(message.type==='heartbeat'){const member=roster.get(peerId);if(member)member.lastSeen=Date.now();return}
+      if(message.type==='state'){
+        const member=roster.get(peerId);if(!member)return;
+        if(message.screen&&Array.from(roster.values()).some(other=>other.peerId!==peerId&&other.screen)){hostLinks.get(peerId)?.send({type:'screen-busy'});return}
+        member.mic=!!message.mic;member.screen=!!message.screen;member.lastSeen=Date.now();publishRoster();return;
+      }
+      if(message.type==='leave')removeMember(peerId);
+    }
+    function removeMember(peerId){if(!isHost||peerId===room?.peerId)return;const member=roster.get(peerId);roster.delete(peerId);hostLinks.delete(peerId);publishRoster();if(member)notify(member.name+' saiu da sala.')}
+    function attachHostLink(link){
+      hostLinks.set(link.peer,link);let accepted=false;
+      link.on('data',message=>{if(!accepted){if(message?.type!=='join')return;accepted=true;applyHostMessage(link.peer,message);return}applyHostMessage(link.peer,message)});
+      link.on('close',()=>{if(accepted)removeMember(link.peer);else hostLinks.delete(link.peer)});
+      link.on('error',()=>{if(accepted)removeMember(link.peer);else hostLinks.delete(link.peer)});
+    }
+    function localMedia(){const tracks=[...(screenStream?.getVideoTracks()||[]),...(micStream?.getAudioTracks()||[])];return tracks.length?new MediaStream(tracks):null}
+    function clearIncoming(call,stream){
+      if(incomingCalls.get(call.peer)!==call)return;incomingCalls.delete(call.peer);
+      if(stream&&$('#screenVideo').srcObject===stream){$('#screenVideo').srcObject=null;$('#screenVideo').classList.remove('visible');$('#screenPlaceholder').style.display='block';$('#liveTag').classList.remove('show')}
+      const audio=$('#remoteAudio');if(stream&&audio.srcObject&&stream.getAudioTracks().some(t=>audio.srcObject.getTracks().includes(t)))audio.srcObject=null;
+    }
+    function acceptMediaCall(call){
+      incomingCalls.set(call.peer,call);call.answer();
+      call.on('stream',stream=>{const videoTracks=stream.getVideoTracks();if(videoTracks.length){const video=$('#screenVideo');video.srcObject=stream;video.muted=true;video.classList.add('visible');$('#screenPlaceholder').style.display='none';$('#liveTag').classList.add('show');$('#localChip').classList.remove('show');video.play().catch(()=>{})}const audioTracks=stream.getAudioTracks();if(audioTracks.length){const audio=$('#remoteAudio');audio.srcObject=new MediaStream(audioTracks);audio.play().catch(()=>notify('Toque na página para ouvir a sala.'))}stream.getTracks().forEach(track=>track.addEventListener('ended',()=>clearIncoming(call,stream),{once:true}))});
+      call.on('close',()=>clearIncoming(call,null));call.on('error',()=>clearIncoming(call,null));
+    }
+    function startPeer(roomHost){
+      return new Promise((resolve,reject)=>{
+        if(!window.Peer){reject(new Error('A biblioteca de conexão não carregou.'));return}
+        isHost=roomHost;joined=false;ending=false;const wantedId=isHost?room.hostPeerId:crypto.randomUUID().replaceAll('-','').slice(0,24);
+        peer=new Peer(wantedId,{debug:1});let settled=false;
+        const readyTimer=setTimeout(()=>{if(!settled){settled=true;reject(new Error('O serviço de conexão demorou para responder.'))}},15000);
+        peer.on('open',id=>{
+          if(settled)return;settled=true;clearTimeout(readyTimer);room.peerId=id;joined=true;setLocalPerson();
+          if(isHost){roster.set(id,localMember());renderRoster();peer.on('connection',attachHostLink);heartbeatTimer=setInterval(()=>{const cutoff=Date.now()-18000;for(const [pid,p] of roster)if(pid!==room.peerId&&p.lastSeen<cutoff)removeMember(pid)},6000);notify('Sala ao vivo. Copie o convite para chamar pessoas.');resolve(true);return}
+          const link=peer.connect(room.hostPeerId,{reliable:true,serialization:'json'});hostLink=link;let welcomed=false;
+          const welcomeTimer=setTimeout(()=>{if(!welcomed&&room){notify('Não encontrei a sala. Confira se a pessoa anfitriã ainda está conectada.');finishRoom(false)}},12000);
+          link.on('open',()=>link.send({type:'join',name:room.person}));
+          link.on('data',message=>{
+            if(message.type==='full'){clearTimeout(welcomeTimer);notify('A sala chegou ao limite de '+MAX_PEOPLE+' pessoas.');finishRoom(false);return}
+            if(message.type==='screen-busy'){stopScreen();notify('Outra pessoa já está compartilhando a tela.');return}
+            if(message.type==='welcome'){welcomed=true;clearTimeout(welcomeTimer);notify('Você entrou na sala ao vivo.');return}
+            if(message.type==='roster'){const next=new Map(message.people.map(p=>[p.peerId,{...p,online:true}]));roster.clear();next.forEach((value,key)=>roster.set(key,value));renderRoster();syncMediaCalls();return}
+            if(message.type==='room-ended'){notify('A pessoa anfitriã encerrou a sala.');finishRoom(false)}
+          });
+          link.on('close',()=>{if(joined&&!ending&&room){notify('A conexão com a sala foi encerrada.');finishRoom(false)}});
+          link.on('error',()=>{if(!welcomed){clearTimeout(welcomeTimer);notify('A conexão com a sala falhou.');finishRoom(false)}});
+          heartbeatTimer=setInterval(()=>{if(hostLink?.open)hostLink.send({type:'heartbeat'})},5000);resolve(true);
+        });
+        peer.on('call',acceptMediaCall);
+        peer.on('disconnected',()=>{if(peer&&!peer.destroyed)peer.reconnect()});
+        peer.on('error',error=>{if(error.type==='unavailable-id')notify('Esta sala já está aberta em outra aba.');else if(error.type!=='peer-unavailable')notify('A conexão caiu. Tente entrar novamente.')});
+      })
+    }
+    async function openRoom(person,code,pass,hostName,roomHost){
+      showRoom(person,code,pass,hostName);
+      try{room.hostPeerId=await makeHostPeerId(code,pass);await startPeer(roomHost)}catch(error){notify(error.message||'Não foi possível conectar à sala.');finishRoom(false)}
+    }
+    function setLocalState(){setLocalPerson();sendToHost({type:'state',mic:micOn,screen:!!screenStream});refreshMediaCalls()}
+    $('#createBtn').addEventListener('click',async()=>{const person=nameInput.value.trim();if(!person){nameInput.focus();notify('Digite seu nome para continuar.');return}await openRoom(person,makeCode(),makePass(),person,true)});
     $('#showJoin').addEventListener('click',()=>{$('#joinWrap').classList.toggle('show');if($('#joinWrap').classList.contains('show'))$('#roomCode').focus()});
-    $('#joinBtn').addEventListener('click',()=>{const person=nameInput.value.trim(),code=$('#roomCode').value.trim().toUpperCase(),pass=$('#roomPass').value;if(!person){nameInput.focus();notify('Digite seu nome para continuar.');return}if(!code||!pass){notify('Preencha o código e a chave do convite.');return}const host=pendingInvite?.host||'sala privada';showRoom(person,code,pass,host);history.replaceState(null,'',location.pathname+location.search);notify('Prévia aberta. A conexão entre pessoas ainda precisa de servidor.')});
-    async function shareScreen(){if(!navigator.mediaDevices?.getDisplayMedia){notify('Compartilhamento de tela indisponível neste navegador.');return}try{screenStream=await navigator.mediaDevices.getDisplayMedia({video:true,audio:false});const video=$('#screenVideo');video.srcObject=screenStream;video.classList.add('visible');$('#screenPlaceholder').style.display='none';$('#liveTag').classList.add('show');$('#localChip').classList.add('show');$('#screenBtn').classList.add('on');screenStream.getVideoTracks()[0].addEventListener('ended',stopScreen,{once:true});}catch(err){if(err.name!=='NotAllowedError')notify('Não foi possível iniciar o compartilhamento.')}}
-    function stopScreen(){if(screenStream){screenStream.getTracks().forEach(t=>t.stop());screenStream=null}const video=$('#screenVideo');video.srcObject=null;video.classList.remove('visible');$('#screenPlaceholder').style.display='block';$('#liveTag').classList.remove('show');$('#localChip').classList.remove('show');$('#screenBtn').classList.remove('on')}
+    $('#joinBtn').addEventListener('click',async()=>{const person=nameInput.value.trim(),code=$('#roomCode').value.trim().toUpperCase(),pass=$('#roomPass').value;if(!person){nameInput.focus();notify('Digite seu nome para continuar.');return}if(!code||!pass){notify('Preencha o código e a chave do convite.');return}const host=pendingInvite?.host||'sala privada';history.replaceState(null,'',location.pathname+location.search);await openRoom(person,code,pass,host,false)});
+    async function shareScreen(){
+      if(!navigator.mediaDevices?.getDisplayMedia){notify('Compartilhamento de tela indisponível neste navegador.');return}
+      if(Array.from(roster.values()).some(p=>p.screen&&p.peerId!==room.peerId)){notify('Outra pessoa já está compartilhando a tela.');return}
+      try{screenStream=await navigator.mediaDevices.getDisplayMedia({video:true,audio:false});const video=$('#screenVideo');video.srcObject=screenStream;video.muted=true;video.classList.add('visible');$('#screenPlaceholder').style.display='none';$('#liveTag').classList.add('show');$('#localChip').classList.add('show');$('#screenBtn').classList.add('on');screenStream.getVideoTracks()[0].addEventListener('ended',stopScreen,{once:true});setLocalState()}catch(error){screenStream=null;if(error.name!=='NotAllowedError')notify('Não foi possível iniciar o compartilhamento.')}
+    }
+    function stopScreen(){const old=screenStream;screenStream=null;if(old)old.getTracks().forEach(track=>track.stop());const video=$('#screenVideo');if(video.srcObject===old)video.srcObject=null;if(!video.srcObject){video.classList.remove('visible');$('#screenPlaceholder').style.display='block';$('#liveTag').classList.remove('show')}$('#localChip').classList.remove('show');$('#screenBtn').classList.remove('on');if(room)setLocalState()}
     $('#screenBtn').addEventListener('click',()=>screenStream?stopScreen():shareScreen());
-    $('#micBtn').addEventListener('click',async()=>{if(!micOn){try{micStream=await navigator.mediaDevices.getUserMedia({audio:true});micOn=true;$('#micBtn').classList.add('on');$('#micBtn').classList.remove('off');$('#personMic').innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0m-7 7v5m-4 0h8"/></svg>'}catch(e){notify('Permita o microfone no navegador para ativá-lo.')}}else{micStream?.getTracks().forEach(t=>t.stop());micStream=null;micOn=false;$('#micBtn').classList.remove('on');$('#micBtn').classList.add('off');$('#personMic').innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 2l20 20M9 9v3a3 3 0 0 0 5.1 2.1M15 9V5a3 3 0 0 0-5.8-1.3M5 10a7 7 0 0 0 12 5m2-5a7 7 0 0 1-.4 2.4M12 17v5m-4 0h8"/></svg>'}});
-    async function copyInvite(){if(!room)return;const base=location.href.split('#')[0];const params=new URLSearchParams({sala:room.code,chave:room.pass,anfitriao:room.hostName});const inviteLink=`${base}#${params.toString()}`;try{await navigator.clipboard.writeText(inviteLink);notify('Link de convite copiado. Quem abrir verá esta sala.')}catch(e){notify('A cópia foi bloqueada pelo navegador. Abra em HTTPS e tente novamente.')}}
+    $('#micBtn').addEventListener('click',async()=>{if(!micOn){try{micStream=await navigator.mediaDevices.getUserMedia({audio:true});micOn=true;$('#micBtn').classList.add('on');$('#micBtn').classList.remove('off');setLocalState()}catch(error){notify('Permita o microfone no navegador para ativá-lo.')}}else{micStream?.getTracks().forEach(track=>track.stop());micStream=null;micOn=false;$('#micBtn').classList.remove('on');$('#micBtn').classList.add('off');setLocalState()}});
+    async function copyInvite(){if(!room)return;const base=location.href.split('#')[0];const params=new URLSearchParams({sala:room.code,chave:room.pass,anfitriao:room.hostName});const inviteLink=base+'#'+params.toString();try{await navigator.clipboard.writeText(inviteLink);notify('Convite copiado. A sala aparece enquanto a pessoa anfitriã estiver conectada.')}catch(error){notify('A cópia foi bloqueada pelo navegador. Abra em HTTPS e tente novamente.')}}
     $('#copyInvite').addEventListener('click',copyInvite);$('#copyBtnBottom').addEventListener('click',copyInvite);
-    $('#leaveBtn').addEventListener('click',()=>{stopScreen();micStream?.getTracks().forEach(t=>t.stop());micStream=null;room=null;meeting.classList.remove('active');home.classList.remove('hidden');notify('Você saiu da sala.')});
-    $('#privacyLink').addEventListener('click',e=>{e.preventDefault();notify('No protótipo, os dados da sala ficam apenas nesta sessão do navegador.')});$('#aboutLink').addEventListener('click',e=>{e.preventDefault();notify('Onda é um protótipo de salas privadas para conversas com tela e voz.')});
+    function finishRoom(announce=true){
+      if(ending)return;ending=true;const previousHost=isHost;
+      if(announce&&room){if(previousHost)hostLinks.forEach(link=>{if(link.open)link.send({type:'room-ended'})});else if(hostLink?.open)hostLink.send({type:'leave'})}
+      joined=false;clearInterval(heartbeatTimer);heartbeatTimer=null;
+      for(const call of mediaCalls.values())call.close();mediaCalls.clear();for(const call of incomingCalls.values())call.close();incomingCalls.clear();
+      hostLinks.forEach(link=>link.close());hostLinks.clear();hostLink?.close();hostLink=null;peer?.destroy();peer=null;
+      screenStream?.getTracks().forEach(track=>track.stop());screenStream=null;micStream?.getTracks().forEach(track=>track.stop());micStream=null;micOn=false;roster.clear();room=null;isHost=false;
+      $('#screenVideo').srcObject=null;$('#remoteAudio').srcObject=null;$('#screenVideo').classList.remove('visible');$('#screenPlaceholder').style.display='block';$('#liveTag').classList.remove('show');$('#localChip').classList.remove('show');$('#screenBtn').classList.remove('on');meeting.classList.remove('active');home.classList.remove('hidden');$('#participantCount').textContent='0 pessoas';$('#sideCount').textContent='0 pessoas';$('#peopleList').innerHTML='';ending=false;
+    }
+    $('#leaveBtn').addEventListener('click',()=>{finishRoom(true);notify('Você saiu da sala.')});
+    window.addEventListener('beforeunload',()=>{if(isHost)hostLinks.forEach(link=>{if(link.open)link.send({type:'room-ended'})});else if(hostLink?.open)hostLink.send({type:'leave'});peer?.destroy()});
+    $('#privacyLink').addEventListener('click',event=>{event.preventDefault();notify('Os participantes conectados veem os nomes e o estado da chamada.')});
+    $('#aboutLink').addEventListener('click',event=>{event.preventDefault();notify('Onda conecta salas pequenas por WebRTC.')});
     const inviteParams=new URLSearchParams(location.hash.slice(1));
-    if(inviteParams.has('sala')&&inviteParams.has('chave')){pendingInvite={code:inviteParams.get('sala'),pass:inviteParams.get('chave'),host:inviteParams.get('anfitriao')||'sala privada'};$('#roomCode').value=pendingInvite.code;$('#roomPass').value=pendingInvite.pass;$('#joinWrap').classList.add('show');$('#heroEyebrow').textContent='convite privado';$('#heroTitle').innerHTML='Você foi<br><span>convidado.</span>';$('#heroCopy').textContent=`Digite seu nome para entrar na sala de ${pendingInvite.host}.`;$('#createBtn').style.display='none';$('#showJoin').style.display='none';$('#joinBtn').textContent='Entrar na sala';}
+    if(inviteParams.has('sala')&&inviteParams.has('chave')){pendingInvite={code:inviteParams.get('sala'),pass:inviteParams.get('chave'),host:inviteParams.get('anfitriao')||'sala privada'};$('#roomCode').value=pendingInvite.code;$('#roomPass').value=pendingInvite.pass;$('#joinWrap').classList.add('show');$('#heroEyebrow').textContent='convite privado';$('#heroTitle').innerHTML='Você foi<br><span>convidado.</span>';$('#heroCopy').textContent='Digite seu nome para entrar na sala de '+pendingInvite.host+'.';$('#createBtn').style.display='none';$('#showJoin').style.display='none';$('#joinBtn').textContent='Entrar na sala'}
   </script>
 </body>
 </html>
